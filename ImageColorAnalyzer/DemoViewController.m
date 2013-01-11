@@ -34,7 +34,6 @@
 - (IBAction)analyzeButtonPressed:(UIButton *)sender {
     NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:self.urlTextField.text]];
     [self.urlTextField resignFirstResponder];
-    NSLog(@"image data = %@", imageData);
     self.image = [UIImage imageWithData:imageData];
 }
 
