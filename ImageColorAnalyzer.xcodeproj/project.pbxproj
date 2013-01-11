@@ -12,7 +12,7 @@
 		B9A7978616A095BE00396577 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A7978516A095BE00396577 /* CoreGraphics.framework */; };
 		B9A7978C16A095BE00396577 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9A7978A16A095BE00396577 /* InfoPlist.strings */; };
 		B9A7978E16A095BE00396577 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A7978D16A095BE00396577 /* main.m */; };
-		B9A7979216A095BE00396577 /* DSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A7979116A095BE00396577 /* DSAppDelegate.m */; };
+		B9A7979216A095BE00396577 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A7979116A095BE00396577 /* AppDelegate.m */; };
 		B9A7979416A095BE00396577 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A7979316A095BE00396577 /* Default.png */; };
 		B9A7979616A095BE00396577 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A7979516A095BE00396577 /* Default@2x.png */; };
 		B9A7979816A095BE00396577 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A7979716A095BE00396577 /* Default-568h@2x.png */; };
@@ -31,8 +31,8 @@
 		B9A7978B16A095BE00396577 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9A7978D16A095BE00396577 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9A7978F16A095BE00396577 /* ImageColorAnalyzer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageColorAnalyzer-Prefix.pch"; sourceTree = "<group>"; };
-		B9A7979016A095BE00396577 /* DSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSAppDelegate.h; sourceTree = "<group>"; };
-		B9A7979116A095BE00396577 /* DSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSAppDelegate.m; sourceTree = "<group>"; };
+		B9A7979016A095BE00396577 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B9A7979116A095BE00396577 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B9A7979316A095BE00396577 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B9A7979516A095BE00396577 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B9A7979716A095BE00396577 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -113,8 +113,8 @@
 		B9A797A116A0963700396577 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				B9A7979016A095BE00396577 /* DSAppDelegate.h */,
-				B9A7979116A095BE00396577 /* DSAppDelegate.m */,
+				B9A7979016A095BE00396577 /* AppDelegate.h */,
+				B9A7979116A095BE00396577 /* AppDelegate.m */,
 				B9A797A216A0965200396577 /* DemoViewController.h */,
 				B9A797A316A0965200396577 /* DemoViewController.m */,
 				B9A797A416A0965200396577 /* DemoViewController.xib */,
@@ -191,7 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9A7978E16A095BE00396577 /* main.m in Sources */,
-				B9A7979216A095BE00396577 /* DSAppDelegate.m in Sources */,
+				B9A7979216A095BE00396577 /* AppDelegate.m in Sources */,
 				B9A797A016A095E200396577 /* ImageColorAnalyzer.m in Sources */,
 				B9A797A516A0965200396577 /* DemoViewController.m in Sources */,
 			);
@@ -269,6 +269,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageColorAnalyzer/ImageColorAnalyzer-Prefix.pch";
 				INFOPLIST_FILE = "ImageColorAnalyzer/ImageColorAnalyzer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -281,6 +282,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageColorAnalyzer/ImageColorAnalyzer-Prefix.pch";
 				INFOPLIST_FILE = "ImageColorAnalyzer/ImageColorAnalyzer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

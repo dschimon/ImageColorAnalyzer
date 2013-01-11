@@ -1,15 +1,15 @@
 //
-//  DSAppDelegate.m
+//  AppDelegate.m
 //  ImageColorAnalyzer
 //
 //  Created by David Schimon on 1/11/13.
 //
 //
 
-#import "DSAppDelegate.h"
+#import "AppDelegate.h"
 #import "DemoViewController.h"
 
-@implementation DSAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
